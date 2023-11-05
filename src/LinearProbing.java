@@ -90,6 +90,7 @@ public class LinearProbing {
         System.out.println(mainObject.getData("fun-coding"));
         System.out.println(mainObject.getData("Dave"));
 
+        System.out.println("---------------------------------------------");
 
         // JAVA HashMap
         HashMap<Integer, String> map1 = new HashMap<>();

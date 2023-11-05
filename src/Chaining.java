@@ -75,6 +75,7 @@ public class Chaining {
         mainObject.saveData("fun-coding", "01033334444");
         mainObject.saveData("David", "01044445555");
         mainObject.saveData("Dave", "01055556666");
+        System.out.println(mainObject.getData("fun-coding"));
         System.out.println(mainObject.getData("DaveLee"));
         System.out.println(mainObject.getData("David"));
         System.out.println(mainObject.getData("Dave"));

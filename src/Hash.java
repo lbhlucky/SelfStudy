@@ -107,6 +107,7 @@ public class Hash {
         mainObj.saveData("Fun-Coding","01012346345");
         mainObj.saveData("David","010144443333");
         mainObj.saveData("Dave","01055556666");
+        System.out.println(mainObj.getData("David"));
         System.out.println(mainObj.getData("DaveLee"));
         System.out.println(mainObj.getData("Dave"));
     }
