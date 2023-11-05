@@ -14,3 +14,9 @@
 * Big-O
   
   O(1) < O(log n) < O(n) < O( n log n) < O(n^2) < O(2^n) < O(n!)
+
+
+23.11.05
+1. 해쉬 (Hash)
+2. 개방 해쉬(Open Hashing), Chaining 기법
+3. 폐쇄 해쉬(Close Hashing), Linear Probing 기법
