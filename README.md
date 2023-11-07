@@ -20,3 +20,8 @@
 1. 해쉬 (Hash)
 2. 개방 해쉬(Open Hashing), Chaining 기법
 3. 폐쇄 해쉬(Close Hashing), Linear Probing 기법
+
+23.11.07
+1. 트리(Tree)
+2. 이진트리(Binary Tree)
+3. 힙(Heap)
