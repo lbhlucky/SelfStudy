@@ -1,6 +1,6 @@
 # SelfStudy
 
-- 자료 구조
+## 자료 구조
   
 23.11.03
 1. 배열(Array)
@@ -26,11 +26,12 @@
 2. 이진트리(Binary Tree)
 3. 힙(Heap)
 
-- 알고리즘
+## 알고리즘
 
 23.11.10
-* 정렬
+### 정렬
 1. 버블정렬(Bubble Sort)
 2. 선택정렬(Selection Sort)
 3. 삽입정렬(Insertion Sort)
-* 재귀용법 
+   
+### 재귀용법 
