@@ -25,3 +25,12 @@
 1. 트리(Tree)
 2. 이진트리(Binary Tree)
 3. 힙(Heap)
+
+- 알고리즘
+
+23.11.10
+* 정렬
+1. 버블정렬(Bubble Sort)
+2. 선택정렬(Selection Sort)
+3. 삽입정렬(Insertion Sort)
+* 재귀용법 
