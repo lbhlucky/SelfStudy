@@ -41,6 +41,9 @@
 ### 동적계획법(Dynamic Programming, DP)
 1. DP 활용 피보나치 수열 구현
 
+23.11.13
 ### 고급 정렬 알고리즘
 1. 병합 정렬(Merge Sort)
 2. 퀵 정렬(Quick Sort)
+3. 순차 탐색(Sequential Search)
+4. 이진 탐색(Binary Search)
