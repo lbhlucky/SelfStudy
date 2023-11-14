@@ -47,3 +47,9 @@
 2. 퀵 정렬(Quick Sort)
 3. 순차 탐색(Sequential Search)
 4. 이진 탐색(Binary Search)
+
+23.11.14
+### 그래프 기본 탐색 알고리즘
+1. 너비 우선 탐색(BFS)
+2. 깊이 우선 탐색(DFS)
+3. 탐욕(Greedy)
