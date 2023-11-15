@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 
 /*
 * 탐욕 알고리즘(Greedy Algorithm)
@@ -31,6 +32,45 @@ public class Greedy {
     // 문제2 부분 배낭 문제(Fractional Knapsack Problem)
     // Q. 무게 제한이 k인 배낭에 최대 가치를 가지도록 물건을 넣는 문제
     //    - 각 물건은 무게(w) 와 가치(v)로 표현될 수 있음
+    // capacity = k
+    // 물건과 가치를 쪼개기 때문에 소수점이 나오므로 double 데이터 타입 사용
+
+    // 2차원 배열로 문제 2의 물건 리스트 만들기
+    //Integer[][] itemList = { {10, 10}, {15, 12}, {20, 10}, {25, 8}, {30, 5}};
+    public void knapsackFunc(Integer[][] itemList, double capacity){
+        double totalValue = 0.0;
+        double fraction =0.0;   // 해당 물건이 몇% 들어갔는지 저장하기 위한 변수
+
+        Arrays.sort(itemList, new Comparator<Integer[]>() {
+            @Override
+            public int compare(Integer[] o1, Integer[] o2) {
+                // 무게를 가치로 나눈다
+                // => 무게당 가치
+                return (o2[1] / o2[0]) - (o1[1] / o1[0]);
+            }
+        });
+
+        for(int i = 0; i < itemList.length ; i++){
+            // 용랑 - 특정물건의 무게 > 0
+            // 물건을 쪼갤 필요 없다
+            if((capacity - (double)itemList[i][0]) > 0){
+                capacity -= (double)itemList[i][0];
+                totalValue += (double)itemList[i][1];
+                System.out.println("무게 : "+itemList[i][0] + ", 가치 : " + itemList[i][1]);
+            } else {
+                // 어느정도 들어가는 지 비율을 찾아야한다.
+                // 총 용량 / 해당물건의 무게
+                fraction = capacity / (double)itemList[i][0];
+                // 총 가치 = 해당 물건의 가치 * 비율
+                totalValue += (double)itemList[i][1] * fraction;
+                System.out.println("무게 : "+itemList[i][0] + ", 가치 : " + itemList[i][1] + ", 비율 : "+fraction);
+                // 해당 물건도 겨우 들어가기 떄문에
+                // 다음 물건을 볼 필요도 없다
+                break;
+            }
+        }
+        System.out.println("총 담을 수 있는 가치 : "+totalValue);
+    }
 
 
     public static void main(String[] args) {
@@ -42,19 +82,10 @@ public class Greedy {
         System.out.println("---------------------------------------------------------------------");
 
 
-        // 정렬 기준 정의하기
-        // 1. 배열에 대한 정렬 : Arrays.sort(배열)
-        Integer[] iArray = new Integer[]{1, 10, 4, 3, 2};
-        Arrays.sort(iArray);
-        Arrays.toString(iArray);
-
-
-        System.out.println("---------------------------------------------------------------------");
-
         // 2차원 배열로 문제 2의 물건 리스트 만들기
         Integer[][] itemList = { {10, 10}, {15, 12}, {20, 10}, {25, 8}, {30, 5}};
         System.out.println("item 갯수 : "+itemList.length);
-
+        greedy.knapsackFunc(itemList, 30.0);
 
     }
 }
