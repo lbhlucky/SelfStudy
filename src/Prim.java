@@ -119,8 +119,53 @@ public class Prim {
 
     }
 
-    public ArrayList<Path> enhancePrimFunc(HashMap<String, HashMap<String, Integer>> edgs){
+    // 개선된 프림 알고리즘
+    // edge 기준이 나닌 vertex 기준
+    public ArrayList<Path> enhancePrimFunc(HashMap<String, HashMap<String, Integer>> graph, String startNode){
+        ArrayList<Path> mst = new ArrayList<Path>();
+        PriorityQueue<Edge4> keys = new PriorityQueue<Edge4>();
+        Edge4 edgeObject;
+        HashMap<String, String> mstPath = new HashMap<String, String>();
+        HashMap<String, Edge4> keysObjects = new HashMap<String, Edge4>();
+        Integer totalWeight = 0;
+        HashMap<String, Integer>    linkedEdges;
+        Edge4 poppedEdge;
+        Edge4 linkedEdge;
 
+        for(String key : graph.keySet()){
+            if(key == startNode){
+                edgeObject = new Edge4(key, 0);
+                mstPath.put(key, key);
+            }else {
+                edgeObject = new Edge4(key, Integer.MAX_VALUE);
+                mstPath.put(key, null);
+            }
+            keys.add(edgeObject);
+            keysObjects.put(key, edgeObject);
+        }
+
+        while(keys.size() > 0){
+            poppedEdge = keys.poll();
+            keysObjects.remove(poppedEdge.node);
+
+            mst.add(new Path(mstPath.get(poppedEdge.node), poppedEdge.node, poppedEdge.weight));
+            totalWeight += poppedEdge.weight;
+
+            linkedEdges = graph.get(poppedEdge.node);
+            for(String adjacent : linkedEdges.keySet()){
+                if(keysObjects.containsKey(adjacent)){
+                    linkedEdge = keysObjects.get(adjacent);
+                    if(linkedEdges.get(adjacent) < linkedEdge.weight){
+                        linkedEdge.weight = linkedEdges.get(adjacent);
+
+                        keys.remove(linkedEdge);
+                        keys.add(linkedEdge);
+                    }
+                }
+            }
+        }
+        System.out.println(totalWeight);
+        return mst;
     }
 
     public static void main(String[] args) {
@@ -205,6 +250,6 @@ public class Prim {
         mygraph.put("G", edges);
 
         System.out.println("그래프의 간선들 : " + mygraph);
-//        System.out.println(prim.primFunc("A", myedges));
+        System.out.println(prim.enhancePrimFunc(mygraph, "A"));
     }
 }
