@@ -15,7 +15,5 @@ public class Test {
         Test test = new Test();
         System.out.println(test.factorial(n));
 
-            System.out.println("VSC TEST");
-           1ㅣ l I i j J
     }
 }
