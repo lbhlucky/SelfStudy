@@ -16,10 +16,6 @@ package Minimum_Spanning_Tree;
 
 import java.util.*;
 
-import Minimum_Spanning_Tree.Path;
-import Minimum_Spanning_Tree.Edge3;
-import Minimum_Spanning_Tree.Edge4;
-
 public class Prim {
     /*
      * 프림 알고리즘 코드

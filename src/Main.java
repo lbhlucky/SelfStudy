@@ -15,5 +15,7 @@ public class Main {
         Main test = new Main();
         System.out.println(test.factorial(n));
 
+        sc.close();
+
     }
 }

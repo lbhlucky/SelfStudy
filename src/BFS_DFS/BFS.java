@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class BFS {
     // BFS 알고리즘 구현
-    public ArrayList<String> BFS(HashMap<String, ArrayList<String>> graph, String start){
+    public ArrayList<String> BFSearch(HashMap<String, ArrayList<String>> graph, String start){
         ArrayList<String> visited = new ArrayList<String>();
         ArrayList<String> needVisit = new ArrayList<String>();
 
@@ -36,7 +36,7 @@ public class BFS {
         graph.put("J", new ArrayList<String>(Arrays.asList("I")));
 
         BFS bfs = new BFS();
-        System.out.println(bfs.BFS(graph, "A"));
+        System.out.println(bfs.BFSearch(graph, "A"));
 
     }
 

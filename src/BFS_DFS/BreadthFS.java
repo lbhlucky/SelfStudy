@@ -36,11 +36,11 @@ public class BreadthFS {
         // 기본 선언 HashMap<키타입, 값타입> 변수 = new HashMap<키타입, 값타입>();
         HashMap<String, Integer> mapData1 = new HashMap<String, Integer>();
         // 다른 hashMap 활용해서 선언
-        HashMap<String, Integer> mapData2 = new HashMap<String, Integer>(mapData1);
+        // HashMap<String, Integer> mapData2 = new HashMap<String, Integer>(mapData1);
         // 초기에 일정 크기로 제한해서 선언
-        HashMap<String, Integer> mapData3 = new HashMap<String, Integer>(10);
+        // HashMap<String, Integer> mapData3 = new HashMap<String, Integer>(10);
         // ArrayList 타입도 가능
-        HashMap<String, ArrayList<String>> mapData4 = new HashMap<String, ArrayList<String>>();
+        // HashMap<String, ArrayList<String>> mapData4 = new HashMap<String, ArrayList<String>>();
 
         // HashMap 데이터 추가 : put()
         mapData1.put("A", 1);

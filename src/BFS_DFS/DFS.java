@@ -1,7 +1,7 @@
 package BFS_DFS;
 import java.util.*;
 public class DFS {
-    public ArrayList<String> DFS(HashMap<String, ArrayList<String>> graph, String start){
+    public ArrayList<String> DFSearch(HashMap<String, ArrayList<String>> graph, String start){
         ArrayList<String> visited = new ArrayList<String>();
         ArrayList<String> needVisit = new ArrayList<String>();
 
@@ -31,7 +31,7 @@ public class DFS {
         graph.put("J", new ArrayList<String>(Arrays.asList("I")));
 
         DFS dfs = new DFS();
-        System.out.println(dfs.DFS(graph, "A"));
+        System.out.println(dfs.DFSearch(graph, "A"));
     }
 
 }

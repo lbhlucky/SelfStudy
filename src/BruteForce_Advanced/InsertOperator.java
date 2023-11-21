@@ -59,22 +59,40 @@ public class InsertOperator {
 
     // 피연산자 2개와 연산자가 주어졌을 때 계산해주는 함수
     static int calculator(int operand1, int operator, int operand2){
-        // TODO
-        return 1;
+        // value, order[i], num[i+1]
+       if(operator == 1 ){  // +
+        return operand1 + operand2;
+       } else if(operator == 2 ){  // -
+        return operand1 - operand2;
+       } else if(operator == 3 ){  // *
+        return operand1 * operand2;
+       }else { // /
+        return operand1 / operand2;
+       }
     }
-
 
     // order[1...N-1] 에 연산자들이 순서대로 저장될 것이다.
+    // k-1 번째 연산자 까지 계산한 결과가 value 이다.
     static void rec_func(int k, int value) {
-        if (k == N) {
+        if (k == N) {   // 모든 연산자들을 전부 나열하는 방법을 찾은 상태
+
             // 완성된 식에 맞게 계산을 해서 정답에 갱신하는 작업
-            // TODO
+            // => value 를 정답에 갱신해준다
+            max = Math.max(max, value);
+            min = Math.min(min, value);
+
         } else {
             // k 번째 연산자는 무엇을 선택할 것인가?
-            // TODO
+            // => 4가지의 연산자들 중에 뭘 쓸 것인지 선택하고 연산자를 계산한 후에 재귀호출하기
+            for(int cand = 1 ; cand <=4 ; cand++){
+                if(operators[cand] >= 1){
+                    operators[cand]--;          
+                    rec_func(k+1,  calculator(value, cand, nums[k+1]));
+                    operators[cand]++;
+                }
+            }
         }
     }
-
     public static void main(String[] args) {
         input();
         // 1 번째 원소부터 M 번째 원소를 조건에 맞게 고르는 모든 방법을 탐색해줘

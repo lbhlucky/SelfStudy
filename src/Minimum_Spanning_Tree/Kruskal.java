@@ -10,7 +10,7 @@ package Minimum_Spanning_Tree;
  * */
 import java.util.*;
 
-import Minimum_Spanning_Tree.Edge2;
+
 public class Kruskal {
     /*
      * 크루스칼 알고리즘(Kruskal algorithm)
