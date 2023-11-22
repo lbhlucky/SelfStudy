@@ -8,8 +8,6 @@ package DataStructure;
  * 포인터 : 각 노드 안에서, 다음이나 이전의 노드와 연결정보를 가지고 있는 공간
  * */
 
-import java.util.LinkedList;
-
 public class SingleLinkedList<T> {
     // 최초로 head 선언
     public Node<T> head = null;
