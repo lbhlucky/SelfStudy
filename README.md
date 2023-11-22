@@ -1,85 +1,66 @@
-# SelfStudy
-
-## 자료 구조
+# 자료 구조
   
-23.11.03
-1. 배열(Array)
-2. 큐(Queue)
-3. 스택(Stack)
-
-23.11.04
-1. 싱글 링크드리스트(Single LinkedList)
-2. 더블 링크드리스트(Double LinkedList)
-
-* Big-O
-  
+### 1. 배열(Array)
+### 2. 큐(Queue)
+### 3. 스택(Stack)
+### 4. 링크드리스트(LinkedList)
+   - 싱글 링크드리스트(Single LinkedList)   
+   - 더블 링크드리스트(Double LinkedList)
+### 5. 해쉬(Hash)
+   - 개방 해쉬(Open Hashing), Chaining 기법
+   - 폐쇄 해쉬(Close Hashing), Linear Probing 기법
+### 6. 트리(Tree)
+   - 이진트리(Binary Tree)
+### 7. 힙(Heap)
+   
+### Big-O 표기법  
   O(1) < O(log n) < O(n) < O( n log n) < O(n^2) < O(2^n) < O(n!)
 
+# 알고리즘
 
-23.11.05
-1. 해쉬 (Hash)
-2. 개방 해쉬(Open Hashing), Chaining 기법
-3. 폐쇄 해쉬(Close Hashing), Linear Probing 기법
-
-23.11.07
-1. 트리(Tree)
-2. 이진트리(Binary Tree)
-3. 힙(Heap)
-
-## 알고리즘
-
-23.11.10
 ### 정렬
-1. 버블정렬(Bubble Sort)
-2. 선택정렬(Selection Sort)
-3. 삽입정렬(Insertion Sort)
+   - 버블정렬(Bubble Sort)
+   - 선택정렬(Selection Sort)
+   - 삽입정렬(Insertion Sort)
    
 ### 재귀용법 
-1. 재귀호출(Recursive Call)
+   - 재귀호출(Recursive Call)
 
-23.11.11
 ### 동적계획법(Dynamic Programming, DP)
-1. DP 활용 피보나치 수열 구현
+   - DP 활용 피보나치 수열 구현
 
-23.11.13
 ### 고급 정렬 알고리즘
-1. 병합 정렬(Merge Sort)
-2. 퀵 정렬(Quick Sort)
-3. 순차 탐색(Sequential Search)
-4. 이진 탐색(Binary Search)
+   - 병합 정렬(Merge Sort)
+   - 퀵 정렬(Quick Sort)
+   - 순차 탐색(Sequential Search)
+   - 이진 탐색(Binary Search)
 
-23.11.14
 ### 그래프 기본 탐색 알고리즘
-1. 너비 우선 탐색(BFS)
-2. 깊이 우선 탐색(DFS)
-3. 탐욕(Greedy) - 동전문제
+   - 너비 우선 탐색(BFS)
+   - 깊이 우선 탐색(DFS)
+   - 탐욕(Greedy) - 동전문제
 
-23.11.15
 ### 그래프 고급 탐색 알고리즘
-1. 탐욕(Greedy) - 부분 배낭 문제
-2. 최단 경로 알고리즘 - 다익스트라(Dijkstra) : 이해가 잘안됨... 복습 필요
+   - 탐욕(Greedy) - 부분 배낭 문제 : 이해가 잘안됨... 복습 필요
+   - 최단 경로 알고리즘 - 다익스트라(Dijkstra) : 이해가 잘안됨... 복습 필요
 
-23.11.16
 ### 다익스트라, 크루스칼 알고리즘
-1. 다익스트라 복습
-2. 최소 신장 트리 - 크루스칼(Kruskal) : 이해가 잘안됨... 복습 필요
+   - 다익스트라 복습
+   - 최소 신장 트리 - 크루스칼(Kruskal) : 이해가 잘안됨... 복습 필요
 
-23.11.17
 ### 프림 알고리즘, 백트래킹
-1. 최소 신장 트리 - 프림(Prim)
-2. 백트래킹
+   - 최소 신장 트리 - 프림(Prim) : 이해가 잘안됨... 복습 필요
+   - 백트래킹 : 이해가 잘안됨... 복습 필요
 
-## 알고리즘 유형별 문제
+# 알고리즘 유형별 문제
 
-23.11.20
 ### 완전 탐색(Brute Force)
-1. N과 M (3)
-2. N과 M (1)
-3. N과 M (4)
-4. N과 M (2)
+   - N과 M (3)
+   - N과 M (1)
+   - N과 M (4)
+   - N과 M (2)
 
-23.11.22
 ### 완전 탐색 응용 (Advanced Brute Force)
-1. 연산자 끼워넣기
-2. N Qeen
-3. 부분 수열의 합
+   - 연산자 끼워넣기
+   - N Qeen
+   - 부분 수열의 합
