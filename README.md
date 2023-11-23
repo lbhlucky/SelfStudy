@@ -64,3 +64,10 @@
    - 연산자 끼워넣기
    - N Qeen
    - 부분 수열의 합
+
+### 정렬 (Sort Application)
+   - 국영수
+### 정렬 응용 (Advanced Sort Application)
+   - 수열 정렬
+   - 카드
+   - 화살표 그리기
