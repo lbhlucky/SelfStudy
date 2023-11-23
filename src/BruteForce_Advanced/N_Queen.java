@@ -17,7 +17,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class N_Queen {
-     static FastReader scan = new FastReader();
+    static FastReader scan = new FastReader();
     static StringBuilder sb = new StringBuilder();
 
     static void input() {
@@ -28,7 +28,7 @@ public class N_Queen {
     static int N, ans;
     static int[] col;
 
-     static boolean attackable(int r1, int c1, int r2, int c2) {
+    static boolean attackable(int r1, int c1, int r2, int c2) {
         if (c1 == c2) return true;
         if (r1 - c1 == r2 - c2) return true;
         if (r1 + c1 == r2 + c2) return true;
@@ -58,7 +58,7 @@ public class N_Queen {
         }
     }
 
-      public static void main(String[] args) {
+    public static void main(String[] args) {
         input();
         // 1 번째 원소부터 M 번째 원소를 조건에 맞게 고르는 모든 방법을 탐색해줘
         rec_func(1);
