@@ -6,7 +6,7 @@
 
 // input : 첫째 줄에 N이 주어진다.(1 <= N < 15)
 // output : 첫 째 줄에 퀸 N개를 서로 공격할 수 없게 놓는 경우의 수를 출력한다.
-package BruteForce_Advanced;
+package BruteForce;
 
 import java.io.BufferedReader;
 import java.io.File;

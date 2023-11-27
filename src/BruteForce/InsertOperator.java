@@ -28,7 +28,7 @@
 //         둘째 줄에는 최솟값을 출력한다. 
 //         연산자를 어떻게 끼워넣어도 항상 -10억보다 크거나 같고, 10억보다 작거나 같은 결과가 나오는 입력만 주어진다. 
 //         또한, 앞에서부터 계산했을 때, 중간에 계산되는 식의 결과도 항상 -10억보다 크거나 같고, 10억보다 작거나 같다.
-package BruteForce_Advanced;
+package BruteForce;
 
 import java.io.BufferedReader;
 import java.io.File;

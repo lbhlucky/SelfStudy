@@ -8,7 +8,7 @@
 //         주어지는 정수의 절댓값은 100,000을 넘지 않는다.
 
 // output : 첫째 줄에 합이 S가 되는 부분수열의 개수를 출력한다.
-package BruteForce_Advanced;
+package BruteForce;
 
 import java.io.BufferedReader;
 import java.io.File;
