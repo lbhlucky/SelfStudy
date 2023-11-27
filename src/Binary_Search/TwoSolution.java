@@ -159,7 +159,7 @@ public class TwoSolution {
     }
 
     public static void main(String[] args) {
-        input();    // 입력 받기
-        pro();      // 계산 후 출력
+        input();
+        pro();
     }   
 }
