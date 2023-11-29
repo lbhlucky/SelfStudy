@@ -44,4 +44,8 @@
 ![img_1.png](img_1.png)
 
 2. 너비 우선 탐색(Breadth First Search, BFS)
+   < Queue가 들고 있는 자료의 의미 >
+   방문이 가능한 정점들을 찾을 떄, Queue에 해당 정점을 넣는다
+   - Queue에 정점이 남았다 -> 아직 방문 가능한 정이 남아있다. or 탐색 중이다.
+   - Queue가 비어있다. -> 시작점에서 갈 수 있는 모든 점을 찾아냈다! or 탐색이 끝났다!
 ![img_2.png](img_2.png)
